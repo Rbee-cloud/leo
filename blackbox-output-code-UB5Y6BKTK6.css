@@ -1,0 +1,125 @@
+/* Modern Fonts */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background: #f8f9fa;
+}
+
+h1, h2, h4 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 700;
+}
+
+/* Navbar */
+.navbar-dark {
+    background: rgba(0, 0, 0, 0.8) !important;
+    backdrop-filter: blur(10px);
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background: linear-gradient(135deg, #0f1419 0%, #1a1a2e 100%), url('images/hero-bg.jpg');
+    background-blend-mode: overlay;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 20, 40, 0.6);
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Buttons */
+.btn-modern {
+    background: linear-gradient(45deg, #00d4ff, #090979);
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-modern:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 212, 255, 0.4);
+}
+
+/* Glassmorphism */
+.bg-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Cards and Shadows */
+.service-card, .testimonial-card, .market-item {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover, .testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-modern {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Colors */
+.text-primary {
+    color: #090979 !important;
+}
+
+.text-accent {
+    color: #00d4ff !important;
+}
+
+.bg-dark {
+    background: #0f1419 !important;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, #090979, #00d4ff);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+.animate-fade-in-delay {
+    animation: fadeIn 1s ease-out 0.5s both;
+}
+
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+}
+
+footer {
+    margin-top: auto;
+}

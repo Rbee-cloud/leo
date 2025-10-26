@@ -1,0 +1,7 @@
+// ... existing code ...
+
+// Simple form alert (for demo)
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you! We\'ll get back to you soon.');
+});
